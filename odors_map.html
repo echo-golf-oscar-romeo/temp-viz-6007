@@ -1,0 +1,3427 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_699cff4f7984d142a42b9de584f9f6b7 {
+                    position: relative;
+                    width: 1120.0px;
+                    height: 800.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_699cff4f7984d142a42b9de584f9f6b7" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_699cff4f7984d142a42b9de584f9f6b7 = L.map(
+                "map_699cff4f7984d142a42b9de584f9f6b7",
+                {
+                    center: [22.307609561643837, 114.18761346575342],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 16,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_90b691577471f47fa347a7a7c95b90a1 = L.tileLayer(
+                "https://api.mapbox.com/styles/v1/kuttin29/cmj5wr9sx000m01pg8uay6pyp/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1Ijoia3V0dGluMjkiLCJhIjoiY21qNXRscjY3MWswYTNnczQ2ejBub2tsaiJ9.nQJ5iQXR3IYR4d8c5zGMIA",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Mapbox",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_90b691577471f47fa347a7a7c95b90a1.addTo(map_699cff4f7984d142a42b9de584f9f6b7);
+        
+    
+        function geo_json_86855e368fd21d1bf13823e97580c870_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "transparent", "fillColor": "#ffffff", "fillOpacity": 0.5, "interactive": false, "weight": 0};
+            }
+        }
+
+        function geo_json_86855e368fd21d1bf13823e97580c870_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_86855e368fd21d1bf13823e97580c870 = L.geoJson(null, {
+                onEachFeature: geo_json_86855e368fd21d1bf13823e97580c870_onEachFeature,
+            
+                style: geo_json_86855e368fd21d1bf13823e97580c870_styler,
+            ...{
+}
+        });
+
+        function geo_json_86855e368fd21d1bf13823e97580c870_add (data) {
+            geo_json_86855e368fd21d1bf13823e97580c870
+                .addData(data);
+        }
+            geo_json_86855e368fd21d1bf13823e97580c870_add({"features": [{"geometry": {"coordinates": [[[-180, -90], [180, -90], [180, 90], [-180, 90], [-180, -90]]], "type": "Polygon"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_86855e368fd21d1bf13823e97580c870.addTo(map_699cff4f7984d142a42b9de584f9f6b7);
+        
+    
+        function geo_json_38e011a47eedbee4c6eeed1eb1799712_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#191923", "fillColor": "transparent", "fillOpacity": 0, "interactive": false, "opacity": 1, "weight": 2};
+            }
+        }
+
+        function geo_json_38e011a47eedbee4c6eeed1eb1799712_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_38e011a47eedbee4c6eeed1eb1799712 = L.geoJson(null, {
+                onEachFeature: geo_json_38e011a47eedbee4c6eeed1eb1799712_onEachFeature,
+            
+                style: geo_json_38e011a47eedbee4c6eeed1eb1799712_styler,
+            ...{
+}
+        });
+
+        function geo_json_38e011a47eedbee4c6eeed1eb1799712_add (data) {
+            geo_json_38e011a47eedbee4c6eeed1eb1799712
+                .addData(data);
+        }
+            geo_json_38e011a47eedbee4c6eeed1eb1799712_add({"features": [{"geometry": {"coordinates": [[[114.18501992322706, 22.307872774822044], [114.18665840007816, 22.306842688154347], [114.18728271622729, 22.307741126782958], [114.18757695814895, 22.308233439400965], [114.18760200001464, 22.308858963517764], [114.1876458232797, 22.312293504338015], [114.18846594438082, 22.312322463007604], [114.19038790757224, 22.312206628292984], [114.19032530290804, 22.309160140796962], [114.19026269824383, 22.307984387352292], [114.18979942372857, 22.30695342298401], [114.18853556076738, 22.305197754236076], [114.18744173207438, 22.303685331475663], [114.18631584979312, 22.304556459330172], [114.1855625904733, 22.305160685246562], [114.18443270149362, 22.305679650204524], [114.18377159623947, 22.305994735131037], [114.18501992322706, 22.307872774822044]]], "type": "Polygon"}, "id": "0", "properties": {"Id": 0}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_38e011a47eedbee4c6eeed1eb1799712.addTo(map_699cff4f7984d142a42b9de584f9f6b7);
+        
+    
+            var marker_cluster_7e75fea44efade19db7a73875dc5bf31 = L.markerClusterGroup(
+                {
+  "maxClusterRadius": 50,
+  "disableClusteringAtZoom": 19,
+}
+            );
+            marker_cluster_7e75fea44efade19db7a73875dc5bf31.options.iconCreateFunction =
+                function(cluster) {
+        var children = cluster.getAllChildMarkers();
+        var emojis = [];
+
+        children.forEach(function(marker) {
+            if (marker.options.title) {
+                emojis.push(marker.options.title);
+            }
+        });
+
+        var emojiText = emojis.slice(0, 6).join('');
+        var count = children.length;
+        var size = Math.max(40, Math.min(80, 35 + count * 2)); // Dynamic size for cluster circle
+        var numDisplayedEmojis = Math.min(emojis.length, 6); // Number of emojis to display
+        // Further refine fontSize calculation for smaller, more effective scaling
+        var fontSize = Math.max(10, Math.min(18, size / (3 + numDisplayedEmojis * 0.15)));
+
+        return L.divIcon({
+            html: '<div style="' +
+                'background-color: rgba(241, 241, 241, 0.95);' +
+                'border: 2px solid #b3b3b3;' + // Updated border color
+                'border-radius: 50%;' +
+                'width: ' + size + 'px;' +
+                'height: ' + size + 'px;' +
+                'display: flex;' +
+                'align-items: center;' +
+                'justify-content: center;' +
+                'font-size: ' + fontSize + 'px;' +
+                'text-align: center;' +
+                'flex-wrap: wrap;' +
+                'padding: 3px;' +
+                'overflow: hidden;' +
+                '">' + emojiText + '</div>',
+            iconSize: [size, size],
+            className: 'emoji-cluster'
+        });
+    };
+        
+    
+            var marker_7bbfaa7d295c9e365a883266e81352f2 = L.marker(
+                [22.3123, 114.188285],
+                {
+  "title": "\ud83e\udd50",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_04b6b093467333a791ee34053dfede15 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83e\udd50\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_861dc76d0f5e1fac5e439f534106a3ce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_211eebcaa6ec9270fd46797222cdcb86 = $(`<div id="html_211eebcaa6ec9270fd46797222cdcb86" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> pastry<br><b>Type:</b> food<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_861dc76d0f5e1fac5e439f534106a3ce.setContent(html_211eebcaa6ec9270fd46797222cdcb86);
+            
+        
+
+        marker_7bbfaa7d295c9e365a883266e81352f2.bindPopup(popup_861dc76d0f5e1fac5e439f534106a3ce)
+        ;
+
+        
+    
+    
+            marker_7bbfaa7d295c9e365a883266e81352f2.bindTooltip(
+                `<div>
+                     🥐 pastry
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7bbfaa7d295c9e365a883266e81352f2.setIcon(div_icon_04b6b093467333a791ee34053dfede15);
+            
+    
+            var marker_7e47298abe0f9388fef0ad36d713eae7 = L.marker(
+                [22.312122, 114.188358],
+                {
+  "title": "\u2615",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_859b072e2756eb6ebd1a1eafe4ce3082 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\u2615\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_f955c86c9eada85acec89d287123c0d7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_64491ad0dab9f86abf7359cf2b0a4186 = $(`<div id="html_64491ad0dab9f86abf7359cf2b0a4186" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> coffee<br><b>Type:</b> food<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_f955c86c9eada85acec89d287123c0d7.setContent(html_64491ad0dab9f86abf7359cf2b0a4186);
+            
+        
+
+        marker_7e47298abe0f9388fef0ad36d713eae7.bindPopup(popup_f955c86c9eada85acec89d287123c0d7)
+        ;
+
+        
+    
+    
+            marker_7e47298abe0f9388fef0ad36d713eae7.bindTooltip(
+                `<div>
+                     ☕ coffee
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7e47298abe0f9388fef0ad36d713eae7.setIcon(div_icon_859b072e2756eb6ebd1a1eafe4ce3082);
+            
+    
+            var marker_fdc12cea04f544aebe2af5c30f5e168a = L.marker(
+                [22.3113, 114.188323],
+                {
+  "title": "\ud83c\udf2c\ufe0f",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_f0ab7eabbb06bc1ceb39b1c6105fc7ab = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83c\udf2c\ufe0f\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_f0621bcbd5565fa6bfb3ba8aa9fc72df = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b01e6a911be8d0fda074727d4dcde386 = $(`<div id="html_b01e6a911be8d0fda074727d4dcde386" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> breeze<br><b>Type:</b> natural<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_f0621bcbd5565fa6bfb3ba8aa9fc72df.setContent(html_b01e6a911be8d0fda074727d4dcde386);
+            
+        
+
+        marker_fdc12cea04f544aebe2af5c30f5e168a.bindPopup(popup_f0621bcbd5565fa6bfb3ba8aa9fc72df)
+        ;
+
+        
+    
+    
+            marker_fdc12cea04f544aebe2af5c30f5e168a.bindTooltip(
+                `<div>
+                     🌬️ breeze
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fdc12cea04f544aebe2af5c30f5e168a.setIcon(div_icon_f0ab7eabbb06bc1ceb39b1c6105fc7ab);
+            
+    
+            var marker_f2b4a7db7f050e2e730a85b8f6a94484 = L.marker(
+                [22.3113, 114.188523],
+                {
+  "title": "\ud83e\udd50",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_5775dc84a45b46695591b11fb889dfad = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83e\udd50\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_ce0b81a095773dbb974f64b9af49f268 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_305f19dae52893ea1aa633aff7248f54 = $(`<div id="html_305f19dae52893ea1aa633aff7248f54" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> pastry<br><b>Type:</b> food<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_ce0b81a095773dbb974f64b9af49f268.setContent(html_305f19dae52893ea1aa633aff7248f54);
+            
+        
+
+        marker_f2b4a7db7f050e2e730a85b8f6a94484.bindPopup(popup_ce0b81a095773dbb974f64b9af49f268)
+        ;
+
+        
+    
+    
+            marker_f2b4a7db7f050e2e730a85b8f6a94484.bindTooltip(
+                `<div>
+                     🥐 pastry
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f2b4a7db7f050e2e730a85b8f6a94484.setIcon(div_icon_5775dc84a45b46695591b11fb889dfad);
+            
+    
+            var marker_eb6796300c939f4e33890e8c08b389bc = L.marker(
+                [22.311242, 114.188735],
+                {
+  "title": "\ud83c\udf5c",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_6e169ecc6952e6393b9d07b6167ac637 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83c\udf5c\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_f0ff254bf10423b4ba4e1761cf08af4b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0d0eda3d0f22e3e754cdc0b43159e7a2 = $(`<div id="html_0d0eda3d0f22e3e754cdc0b43159e7a2" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> meat based food<br><b>Type:</b> food<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_f0ff254bf10423b4ba4e1761cf08af4b.setContent(html_0d0eda3d0f22e3e754cdc0b43159e7a2);
+            
+        
+
+        marker_eb6796300c939f4e33890e8c08b389bc.bindPopup(popup_f0ff254bf10423b4ba4e1761cf08af4b)
+        ;
+
+        
+    
+    
+            marker_eb6796300c939f4e33890e8c08b389bc.bindTooltip(
+                `<div>
+                     🍜 meat based food
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_eb6796300c939f4e33890e8c08b389bc.setIcon(div_icon_6e169ecc6952e6393b9d07b6167ac637);
+            
+    
+            var marker_28b997875ac6f5a45eb57bfc05ca0b65 = L.marker(
+                [22.311265, 114.189287],
+                {
+  "title": "\u26e9\ufe0f",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_31c46df0accf337b5c2a4653b0f4b221 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\u26e9\ufe0f\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_3162fc95f0290c605e272e06b97cfa2b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9796b511850455a6a51e61d9ac8902c1 = $(`<div id="html_9796b511850455a6a51e61d9ac8902c1" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> burning<br><b>Type:</b> natural<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_3162fc95f0290c605e272e06b97cfa2b.setContent(html_9796b511850455a6a51e61d9ac8902c1);
+            
+        
+
+        marker_28b997875ac6f5a45eb57bfc05ca0b65.bindPopup(popup_3162fc95f0290c605e272e06b97cfa2b)
+        ;
+
+        
+    
+    
+            marker_28b997875ac6f5a45eb57bfc05ca0b65.bindTooltip(
+                `<div>
+                     ⛩️ burning
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_28b997875ac6f5a45eb57bfc05ca0b65.setIcon(div_icon_31c46df0accf337b5c2a4653b0f4b221);
+            
+    
+            var marker_fe2b4b0dd6abea15e71c08c7e5a54e8a = L.marker(
+                [22.312245, 114.189518],
+                {
+  "title": "\ud83c\udf2c\ufe0f",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_0c36e32e59f4c934548aef772f3ac576 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83c\udf2c\ufe0f\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_fd01174bbcb8d35395c5c6d4d6616ac7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_19d09c2d14c111e8a35f4b5a951d22dc = $(`<div id="html_19d09c2d14c111e8a35f4b5a951d22dc" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> breeze<br><b>Type:</b> natural<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_fd01174bbcb8d35395c5c6d4d6616ac7.setContent(html_19d09c2d14c111e8a35f4b5a951d22dc);
+            
+        
+
+        marker_fe2b4b0dd6abea15e71c08c7e5a54e8a.bindPopup(popup_fd01174bbcb8d35395c5c6d4d6616ac7)
+        ;
+
+        
+    
+    
+            marker_fe2b4b0dd6abea15e71c08c7e5a54e8a.bindTooltip(
+                `<div>
+                     🌬️ breeze
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fe2b4b0dd6abea15e71c08c7e5a54e8a.setIcon(div_icon_0c36e32e59f4c934548aef772f3ac576);
+            
+    
+            var marker_cf3ac4ae1b2fa91f4024536d6562d753 = L.marker(
+                [22.311964, 114.19012699999999],
+                {
+  "title": "\ud83d\udee3\ufe0f",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_c13248d1aedef09bc441f0ae1b061b4b = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83d\udee3\ufe0f\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_60c748df805b66a0adb1e12af4bd3c6d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e77ad9d4312a51b766e184f56e3d9a2d = $(`<div id="html_e77ad9d4312a51b766e184f56e3d9a2d" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> road<br><b>Type:</b> chemical<br><b>Attitude:</b> neutral</div>`)[0];
+                popup_60c748df805b66a0adb1e12af4bd3c6d.setContent(html_e77ad9d4312a51b766e184f56e3d9a2d);
+            
+        
+
+        marker_cf3ac4ae1b2fa91f4024536d6562d753.bindPopup(popup_60c748df805b66a0adb1e12af4bd3c6d)
+        ;
+
+        
+    
+    
+            marker_cf3ac4ae1b2fa91f4024536d6562d753.bindTooltip(
+                `<div>
+                     🛣️ road
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cf3ac4ae1b2fa91f4024536d6562d753.setIcon(div_icon_c13248d1aedef09bc441f0ae1b061b4b);
+            
+    
+            var marker_e94aa6aa9c574146bf18feae34dd0f2a = L.marker(
+                [22.311964, 114.190327],
+                {
+  "title": "\ud83d\udca8",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_cefd19f7dba15afd36dcc631e3703f42 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83d\udca8\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_6a6eac7e1c21243c5582f079df22b1be = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a0b25c663f5831a05e5ad3e801d08a15 = $(`<div id="html_a0b25c663f5831a05e5ad3e801d08a15" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> gas<br><b>Type:</b> chemical<br><b>Attitude:</b> negative</div>`)[0];
+                popup_6a6eac7e1c21243c5582f079df22b1be.setContent(html_a0b25c663f5831a05e5ad3e801d08a15);
+            
+        
+
+        marker_e94aa6aa9c574146bf18feae34dd0f2a.bindPopup(popup_6a6eac7e1c21243c5582f079df22b1be)
+        ;
+
+        
+    
+    
+            marker_e94aa6aa9c574146bf18feae34dd0f2a.bindTooltip(
+                `<div>
+                     💨 gas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e94aa6aa9c574146bf18feae34dd0f2a.setIcon(div_icon_cefd19f7dba15afd36dcc631e3703f42);
+            
+    
+            var marker_2cffbe91ea3fba7bfdfbc08059bd62f4 = L.marker(
+                [22.311964, 114.190527],
+                {
+  "title": "\ud83d\ude97",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_b925098de58a032c9d307e6e14d89523 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83d\ude97\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_ec9b596c5231fced8462e3bf2f9f7863 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5b297469f1ec9107d78477f4416f17b1 = $(`<div id="html_5b297469f1ec9107d78477f4416f17b1" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> cars<br><b>Type:</b> chemical<br><b>Attitude:</b> negative</div>`)[0];
+                popup_ec9b596c5231fced8462e3bf2f9f7863.setContent(html_5b297469f1ec9107d78477f4416f17b1);
+            
+        
+
+        marker_2cffbe91ea3fba7bfdfbc08059bd62f4.bindPopup(popup_ec9b596c5231fced8462e3bf2f9f7863)
+        ;
+
+        
+    
+    
+            marker_2cffbe91ea3fba7bfdfbc08059bd62f4.bindTooltip(
+                `<div>
+                     🚗 cars
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2cffbe91ea3fba7bfdfbc08059bd62f4.setIcon(div_icon_b925098de58a032c9d307e6e14d89523);
+            
+    
+            var marker_b8c684e936f7c2a2a4f04003735d8a0c = L.marker(
+                [22.310581, 114.19011499999999],
+                {
+  "title": "\ud83d\udee2\ufe0f",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_3943f3f683275640336e9fdfdfea4cbd = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83d\udee2\ufe0f\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_a993fc2aca2f9a6bdfef440c0deebe3c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6f431e7c9a6375febb40cea38ea8cfe4 = $(`<div id="html_6f431e7c9a6375febb40cea38ea8cfe4" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> car oil<br><b>Type:</b> chemical<br><b>Attitude:</b> negative</div>`)[0];
+                popup_a993fc2aca2f9a6bdfef440c0deebe3c.setContent(html_6f431e7c9a6375febb40cea38ea8cfe4);
+            
+        
+
+        marker_b8c684e936f7c2a2a4f04003735d8a0c.bindPopup(popup_a993fc2aca2f9a6bdfef440c0deebe3c)
+        ;
+
+        
+    
+    
+            marker_b8c684e936f7c2a2a4f04003735d8a0c.bindTooltip(
+                `<div>
+                     🛢️ car oil
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b8c684e936f7c2a2a4f04003735d8a0c.setIcon(div_icon_3943f3f683275640336e9fdfdfea4cbd);
+            
+    
+            var marker_4040ab94bc712701fb5b51558d3199da = L.marker(
+                [22.310581, 114.190315],
+                {
+  "title": "\ud83e\uddea",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_6aa2886617b0d6f4653d7434283587ed = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83e\uddea\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_af6352b6e0712e3cbd4903924ad3b53c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7dd06eddadbcf1bbe6b946af9cec6770 = $(`<div id="html_7dd06eddadbcf1bbe6b946af9cec6770" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> chemicals<br><b>Type:</b> chemical<br><b>Attitude:</b> negative</div>`)[0];
+                popup_af6352b6e0712e3cbd4903924ad3b53c.setContent(html_7dd06eddadbcf1bbe6b946af9cec6770);
+            
+        
+
+        marker_4040ab94bc712701fb5b51558d3199da.bindPopup(popup_af6352b6e0712e3cbd4903924ad3b53c)
+        ;
+
+        
+    
+    
+            marker_4040ab94bc712701fb5b51558d3199da.bindTooltip(
+                `<div>
+                     🧪 chemicals
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4040ab94bc712701fb5b51558d3199da.setIcon(div_icon_6aa2886617b0d6f4653d7434283587ed);
+            
+    
+            var marker_6ad0512b666e4342ebc1ab710a7e7e82 = L.marker(
+                [22.309235, 114.190069],
+                {
+  "title": "\ud83d\ude97",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_95b3f11fe44e93100e00913bc59092db = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83d\ude97\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_81ef81fd486cb09e9378c4a9ccdda565 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_46ae21a237923c8e8ae908be66b1c56f = $(`<div id="html_46ae21a237923c8e8ae908be66b1c56f" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> cars<br><b>Type:</b> chemical<br><b>Attitude:</b> negative</div>`)[0];
+                popup_81ef81fd486cb09e9378c4a9ccdda565.setContent(html_46ae21a237923c8e8ae908be66b1c56f);
+            
+        
+
+        marker_6ad0512b666e4342ebc1ab710a7e7e82.bindPopup(popup_81ef81fd486cb09e9378c4a9ccdda565)
+        ;
+
+        
+    
+    
+            marker_6ad0512b666e4342ebc1ab710a7e7e82.bindTooltip(
+                `<div>
+                     🚗 cars
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6ad0512b666e4342ebc1ab710a7e7e82.setIcon(div_icon_95b3f11fe44e93100e00913bc59092db);
+            
+    
+            var marker_269f8d829b2d9f7529e9ea3192d778f5 = L.marker(
+                [22.308041, 114.190035],
+                {
+  "title": "\ud83d\udeac",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_5192cfe89f3ecf2c2c4aca5cdd78e175 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83d\udeac\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_c30c0ad9649b49a2cb0fa2dc5e2287e3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_195c6def6a5b87dfcf70fae1b12d7daa = $(`<div id="html_195c6def6a5b87dfcf70fae1b12d7daa" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> cigarettes<br><b>Type:</b> chemical<br><b>Attitude:</b> negative</div>`)[0];
+                popup_c30c0ad9649b49a2cb0fa2dc5e2287e3.setContent(html_195c6def6a5b87dfcf70fae1b12d7daa);
+            
+        
+
+        marker_269f8d829b2d9f7529e9ea3192d778f5.bindPopup(popup_c30c0ad9649b49a2cb0fa2dc5e2287e3)
+        ;
+
+        
+    
+    
+            marker_269f8d829b2d9f7529e9ea3192d778f5.bindTooltip(
+                `<div>
+                     🚬 cigarettes
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_269f8d829b2d9f7529e9ea3192d778f5.setIcon(div_icon_5192cfe89f3ecf2c2c4aca5cdd78e175);
+            
+    
+            var marker_165663dfd4a394510c547c7d7f5ce49b = L.marker(
+                [22.306928, 114.189576],
+                {
+  "title": "\u26e9\ufe0f",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_17e485167024b733ec1c9fee70e98e6b = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\u26e9\ufe0f\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_d3a49dd7acc46b21e1ad5bbcc2905842 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_820f5590fea0304b4a969b03d191f546 = $(`<div id="html_820f5590fea0304b4a969b03d191f546" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> burnt chinese<br><b>Type:</b> natural<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_d3a49dd7acc46b21e1ad5bbcc2905842.setContent(html_820f5590fea0304b4a969b03d191f546);
+            
+        
+
+        marker_165663dfd4a394510c547c7d7f5ce49b.bindPopup(popup_d3a49dd7acc46b21e1ad5bbcc2905842)
+        ;
+
+        
+    
+    
+            marker_165663dfd4a394510c547c7d7f5ce49b.bindTooltip(
+                `<div>
+                     ⛩️ burnt chinese
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_165663dfd4a394510c547c7d7f5ce49b.setIcon(div_icon_17e485167024b733ec1c9fee70e98e6b);
+            
+    
+            var marker_8edfa96d7013efa82329e26ba2c102be = L.marker(
+                [22.30699, 114.187454],
+                {
+  "title": "\ud83c\udf4e",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_432c9105537351ccc668195181f10a36 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83c\udf4e\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_8acde1f6815baa42043dfb46a271d0c3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e64475bfb4b35fcf058f3a0aee44ffe6 = $(`<div id="html_e64475bfb4b35fcf058f3a0aee44ffe6" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> fruits<br><b>Type:</b> food<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_8acde1f6815baa42043dfb46a271d0c3.setContent(html_e64475bfb4b35fcf058f3a0aee44ffe6);
+            
+        
+
+        marker_8edfa96d7013efa82329e26ba2c102be.bindPopup(popup_8acde1f6815baa42043dfb46a271d0c3)
+        ;
+
+        
+    
+    
+            marker_8edfa96d7013efa82329e26ba2c102be.bindTooltip(
+                `<div>
+                     🍎 fruits
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8edfa96d7013efa82329e26ba2c102be.setIcon(div_icon_432c9105537351ccc668195181f10a36);
+            
+    
+            var marker_45f717b0cbd7abd7fb8c991c1a5bf0e3 = L.marker(
+                [22.30699, 114.18765400000001],
+                {
+  "title": "\ud83e\udd6c",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_96f4dfa9368923fd192d71a27b38a0aa = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83e\udd6c\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_e66cef7098061c78e1e974e72be1bce0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9b19a9b7d142562e68239550a4de8dd8 = $(`<div id="html_9b19a9b7d142562e68239550a4de8dd8" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> veggies<br><b>Type:</b> food<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_e66cef7098061c78e1e974e72be1bce0.setContent(html_9b19a9b7d142562e68239550a4de8dd8);
+            
+        
+
+        marker_45f717b0cbd7abd7fb8c991c1a5bf0e3.bindPopup(popup_e66cef7098061c78e1e974e72be1bce0)
+        ;
+
+        
+    
+    
+            marker_45f717b0cbd7abd7fb8c991c1a5bf0e3.bindTooltip(
+                `<div>
+                     🥬 veggies
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_45f717b0cbd7abd7fb8c991c1a5bf0e3.setIcon(div_icon_96f4dfa9368923fd192d71a27b38a0aa);
+            
+    
+            var marker_daf1c9a129d26618d57b91e1e93cad8d = L.marker(
+                [22.306256, 114.187437],
+                {
+  "title": "\ud83d\udee3\ufe0f",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_f8ae1f0cff6e788cdfd694b7152998fd = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83d\udee3\ufe0f\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_c6bbc6e62efe1a3c84f4d6caabc0ff99 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9ec5dfdfef30da5955cf27ff485a1620 = $(`<div id="html_9ec5dfdfef30da5955cf27ff485a1620" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> road<br><b>Type:</b> chemical<br><b>Attitude:</b> neutral</div>`)[0];
+                popup_c6bbc6e62efe1a3c84f4d6caabc0ff99.setContent(html_9ec5dfdfef30da5955cf27ff485a1620);
+            
+        
+
+        marker_daf1c9a129d26618d57b91e1e93cad8d.bindPopup(popup_c6bbc6e62efe1a3c84f4d6caabc0ff99)
+        ;
+
+        
+    
+    
+            marker_daf1c9a129d26618d57b91e1e93cad8d.bindTooltip(
+                `<div>
+                     🛣️ road
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_daf1c9a129d26618d57b91e1e93cad8d.setIcon(div_icon_f8ae1f0cff6e788cdfd694b7152998fd);
+            
+    
+            var marker_39e93da7ea5145566744bda36922bd4e = L.marker(
+                [22.306256, 114.18763700000001],
+                {
+  "title": "\ud83d\ude97",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_6722d4661b24a67603e833dc1565c914 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83d\ude97\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_8f01c1ed0f1295dfb05ca0298c016a31 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_972ed32b8b335c93d78080a4ec37a478 = $(`<div id="html_972ed32b8b335c93d78080a4ec37a478" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> cars<br><b>Type:</b> chemical<br><b>Attitude:</b> negative</div>`)[0];
+                popup_8f01c1ed0f1295dfb05ca0298c016a31.setContent(html_972ed32b8b335c93d78080a4ec37a478);
+            
+        
+
+        marker_39e93da7ea5145566744bda36922bd4e.bindPopup(popup_8f01c1ed0f1295dfb05ca0298c016a31)
+        ;
+
+        
+    
+    
+            marker_39e93da7ea5145566744bda36922bd4e.bindTooltip(
+                `<div>
+                     🚗 cars
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_39e93da7ea5145566744bda36922bd4e.setIcon(div_icon_6722d4661b24a67603e833dc1565c914);
+            
+    
+            var marker_303ad5847942a6552b7c5d94b8584a16 = L.marker(
+                [22.306521, 114.18796499999999],
+                {
+  "title": "\ud83c\udf70",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_41db6a81b5e84ab28512e381ba3cc287 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83c\udf70\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_35d7e4726c60f1c8a34f781c25309d70 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ce210cb6988c6a4e85bf741047906f13 = $(`<div id="html_ce210cb6988c6a4e85bf741047906f13" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> deserts<br><b>Type:</b> food<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_35d7e4726c60f1c8a34f781c25309d70.setContent(html_ce210cb6988c6a4e85bf741047906f13);
+            
+        
+
+        marker_303ad5847942a6552b7c5d94b8584a16.bindPopup(popup_35d7e4726c60f1c8a34f781c25309d70)
+        ;
+
+        
+    
+    
+            marker_303ad5847942a6552b7c5d94b8584a16.bindTooltip(
+                `<div>
+                     🍰 deserts
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_303ad5847942a6552b7c5d94b8584a16.setIcon(div_icon_41db6a81b5e84ab28512e381ba3cc287);
+            
+    
+            var marker_654b848a95cd3a73c24b259f25523952 = L.marker(
+                [22.306521, 114.188165],
+                {
+  "title": "\ud83c\udf6c",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_c3a57b7515f89412f9261f6de6be4312 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83c\udf6c\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_4ef23e807b4d0e81dfd8475b453b7417 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_93bc5674c2de0ec4739e5ef1fb636718 = $(`<div id="html_93bc5674c2de0ec4739e5ef1fb636718" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> sweets<br><b>Type:</b> food<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_4ef23e807b4d0e81dfd8475b453b7417.setContent(html_93bc5674c2de0ec4739e5ef1fb636718);
+            
+        
+
+        marker_654b848a95cd3a73c24b259f25523952.bindPopup(popup_4ef23e807b4d0e81dfd8475b453b7417)
+        ;
+
+        
+    
+    
+            marker_654b848a95cd3a73c24b259f25523952.bindTooltip(
+                `<div>
+                     🍬 sweets
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_654b848a95cd3a73c24b259f25523952.setIcon(div_icon_c3a57b7515f89412f9261f6de6be4312);
+            
+    
+            var marker_3fb836f5c98e47b4c63a28347cd789c3 = L.marker(
+                [22.306653, 114.18825],
+                {
+  "title": "\ud83c\udf5c",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_3d27b6b340fd883b2a195f7a929f2eef = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83c\udf5c\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_7013a2e0f3ef3cbc9409198a99a97c16 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c17aab7d726e3c179944908baa320da0 = $(`<div id="html_c17aab7d726e3c179944908baa320da0" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> meat based food<br><b>Type:</b> food<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_7013a2e0f3ef3cbc9409198a99a97c16.setContent(html_c17aab7d726e3c179944908baa320da0);
+            
+        
+
+        marker_3fb836f5c98e47b4c63a28347cd789c3.bindPopup(popup_7013a2e0f3ef3cbc9409198a99a97c16)
+        ;
+
+        
+    
+    
+            marker_3fb836f5c98e47b4c63a28347cd789c3.bindTooltip(
+                `<div>
+                     🍜 meat based food
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3fb836f5c98e47b4c63a28347cd789c3.setIcon(div_icon_3d27b6b340fd883b2a195f7a929f2eef);
+            
+    
+            var marker_5304d1da28b6324f2dae977922783553 = L.marker(
+                [22.306653, 114.18845],
+                {
+  "title": "\ud83d\udeac",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_a231912b951aaf972fd51fb87a1e26d1 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83d\udeac\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_50c933157d082ac5d8cd4e850ac01295 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1605abc72afc088727f5e00f6bd2a222 = $(`<div id="html_1605abc72afc088727f5e00f6bd2a222" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> cigarettes<br><b>Type:</b> chemical<br><b>Attitude:</b> negative</div>`)[0];
+                popup_50c933157d082ac5d8cd4e850ac01295.setContent(html_1605abc72afc088727f5e00f6bd2a222);
+            
+        
+
+        marker_5304d1da28b6324f2dae977922783553.bindPopup(popup_50c933157d082ac5d8cd4e850ac01295)
+        ;
+
+        
+    
+    
+            marker_5304d1da28b6324f2dae977922783553.bindTooltip(
+                `<div>
+                     🚬 cigarettes
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5304d1da28b6324f2dae977922783553.setIcon(div_icon_a231912b951aaf972fd51fb87a1e26d1);
+            
+    
+            var marker_67c9861f02e23a38fefb7f0850d22558 = L.marker(
+                [22.306306, 114.188255],
+                {
+  "title": "\ud83e\uddfc",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_d11fae5186acc13203da78c2732f3f6c = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83e\uddfc\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_100ea3bed1934d919aae5d171383b030 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e8c22eaa3fcfb1b7b30bf1cc05d6899d = $(`<div id="html_e8c22eaa3fcfb1b7b30bf1cc05d6899d" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> laundry<br><b>Type:</b> chemical<br><b>Attitude:</b> neutral</div>`)[0];
+                popup_100ea3bed1934d919aae5d171383b030.setContent(html_e8c22eaa3fcfb1b7b30bf1cc05d6899d);
+            
+        
+
+        marker_67c9861f02e23a38fefb7f0850d22558.bindPopup(popup_100ea3bed1934d919aae5d171383b030)
+        ;
+
+        
+    
+    
+            marker_67c9861f02e23a38fefb7f0850d22558.bindTooltip(
+                `<div>
+                     🧼 laundry
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_67c9861f02e23a38fefb7f0850d22558.setIcon(div_icon_d11fae5186acc13203da78c2732f3f6c);
+            
+    
+            var marker_522ec2a7bc2a4320d9289ed6fc100486 = L.marker(
+                [22.306089, 114.188132],
+                {
+  "title": "\ud83e\udd6c",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_f59918da75789758d45628e83560a117 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83e\udd6c\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_890586bbac7873dc96c6c59a91987b9e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8687277add893a0f1515dd42a107c0ed = $(`<div id="html_8687277add893a0f1515dd42a107c0ed" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> veggies<br><b>Type:</b> food<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_890586bbac7873dc96c6c59a91987b9e.setContent(html_8687277add893a0f1515dd42a107c0ed);
+            
+        
+
+        marker_522ec2a7bc2a4320d9289ed6fc100486.bindPopup(popup_890586bbac7873dc96c6c59a91987b9e)
+        ;
+
+        
+    
+    
+            marker_522ec2a7bc2a4320d9289ed6fc100486.bindTooltip(
+                `<div>
+                     🥬 veggies
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_522ec2a7bc2a4320d9289ed6fc100486.setIcon(div_icon_f59918da75789758d45628e83560a117);
+            
+    
+            var marker_415a146b1f5f8d83d956e9759be91982 = L.marker(
+                [22.305769, 114.188655],
+                {
+  "title": "\ud83d\ude97",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_0ef5a9ac5e6abc68e4da6733593b37bd = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83d\ude97\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_f28153505979e8ec482a10b746985ffa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fad713282dea00906f39fe2b78346b00 = $(`<div id="html_fad713282dea00906f39fe2b78346b00" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> cars<br><b>Type:</b> chemical<br><b>Attitude:</b> negative</div>`)[0];
+                popup_f28153505979e8ec482a10b746985ffa.setContent(html_fad713282dea00906f39fe2b78346b00);
+            
+        
+
+        marker_415a146b1f5f8d83d956e9759be91982.bindPopup(popup_f28153505979e8ec482a10b746985ffa)
+        ;
+
+        
+    
+    
+            marker_415a146b1f5f8d83d956e9759be91982.bindTooltip(
+                `<div>
+                     🚗 cars
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_415a146b1f5f8d83d956e9759be91982.setIcon(div_icon_0ef5a9ac5e6abc68e4da6733593b37bd);
+            
+    
+            var marker_3931272f37759a0daa3faa9038deb5c9 = L.marker(
+                [22.305769, 114.188855],
+                {
+  "title": "\ud83d\udeac",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_0c642b2b8290df760cd30a66d88d2095 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83d\udeac\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_d857b7187a0928b200a6de4c388accf3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c995cdcca4e32288b429ec7c2e39a33e = $(`<div id="html_c995cdcca4e32288b429ec7c2e39a33e" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> cigarettes<br><b>Type:</b> chemical<br><b>Attitude:</b> negative</div>`)[0];
+                popup_d857b7187a0928b200a6de4c388accf3.setContent(html_c995cdcca4e32288b429ec7c2e39a33e);
+            
+        
+
+        marker_3931272f37759a0daa3faa9038deb5c9.bindPopup(popup_d857b7187a0928b200a6de4c388accf3)
+        ;
+
+        
+    
+    
+            marker_3931272f37759a0daa3faa9038deb5c9.bindTooltip(
+                `<div>
+                     🚬 cigarettes
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3931272f37759a0daa3faa9038deb5c9.setIcon(div_icon_0c642b2b8290df760cd30a66d88d2095);
+            
+    
+            var marker_36cc61372816d230b69f39ed183e985a = L.marker(
+                [22.305903, 114.188107],
+                {
+  "title": "\ud83e\udd86",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_7bf74d33e56903ada011a0be42cbfcb2 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83e\udd86\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_bf34d488210d1b6673f6d95962d43869 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a66fc6c55f2790182671ec3dd421f33f = $(`<div id="html_a66fc6c55f2790182671ec3dd421f33f" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> roasted duck<br><b>Type:</b> food<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_bf34d488210d1b6673f6d95962d43869.setContent(html_a66fc6c55f2790182671ec3dd421f33f);
+            
+        
+
+        marker_36cc61372816d230b69f39ed183e985a.bindPopup(popup_bf34d488210d1b6673f6d95962d43869)
+        ;
+
+        
+    
+    
+            marker_36cc61372816d230b69f39ed183e985a.bindTooltip(
+                `<div>
+                     🦆 roasted duck
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_36cc61372816d230b69f39ed183e985a.setIcon(div_icon_7bf74d33e56903ada011a0be42cbfcb2);
+            
+    
+            var marker_42c848916f8bf01fc1df736a407420b4 = L.marker(
+                [22.305828, 114.187803],
+                {
+  "title": "\ud83c\udf36\ufe0f",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_3053f1d90df8fb7f93412eeab6d6bf5b = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83c\udf36\ufe0f\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_fc0fb02693be84b19aab729ffcb21cd4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f9960917ddd419edf2d97f2207d6a446 = $(`<div id="html_f9960917ddd419edf2d97f2207d6a446" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> spices<br><b>Type:</b> food<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_fc0fb02693be84b19aab729ffcb21cd4.setContent(html_f9960917ddd419edf2d97f2207d6a446);
+            
+        
+
+        marker_42c848916f8bf01fc1df736a407420b4.bindPopup(popup_fc0fb02693be84b19aab729ffcb21cd4)
+        ;
+
+        
+    
+    
+            marker_42c848916f8bf01fc1df736a407420b4.bindTooltip(
+                `<div>
+                     🌶️ spices
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_42c848916f8bf01fc1df736a407420b4.setIcon(div_icon_3053f1d90df8fb7f93412eeab6d6bf5b);
+            
+    
+            var marker_026063b95be83cac3540438fc030433e = L.marker(
+                [22.305766, 114.187817],
+                {
+  "title": "\ud83e\udd6d",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_1958ac5a2f3044ca77ca8a7868a258e6 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83e\udd6d\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_a2a83cfa3d8b2086455d5c8cb90ecf43 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a65f248624b115b567426cdee4384962 = $(`<div id="html_a65f248624b115b567426cdee4384962" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> durian<br><b>Type:</b> food<br><b>Attitude:</b> negative</div>`)[0];
+                popup_a2a83cfa3d8b2086455d5c8cb90ecf43.setContent(html_a65f248624b115b567426cdee4384962);
+            
+        
+
+        marker_026063b95be83cac3540438fc030433e.bindPopup(popup_a2a83cfa3d8b2086455d5c8cb90ecf43)
+        ;
+
+        
+    
+    
+            marker_026063b95be83cac3540438fc030433e.bindTooltip(
+                `<div>
+                     🥭 durian
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_026063b95be83cac3540438fc030433e.setIcon(div_icon_1958ac5a2f3044ca77ca8a7868a258e6);
+            
+    
+            var marker_1e8d4bda254cfdd143f8b70a5e86c251 = L.marker(
+                [22.305717, 114.187782],
+                {
+  "title": "\ud83c\udf63",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_e7ea2dfa22b79e683cfb9078149a6e9e = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83c\udf63\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_98b0c9096b595c97064af9f18b5a9099 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a470895ccf1cc3ee6ca5469a2905a713 = $(`<div id="html_a470895ccf1cc3ee6ca5469a2905a713" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> sushi<br><b>Type:</b> food<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_98b0c9096b595c97064af9f18b5a9099.setContent(html_a470895ccf1cc3ee6ca5469a2905a713);
+            
+        
+
+        marker_1e8d4bda254cfdd143f8b70a5e86c251.bindPopup(popup_98b0c9096b595c97064af9f18b5a9099)
+        ;
+
+        
+    
+    
+            marker_1e8d4bda254cfdd143f8b70a5e86c251.bindTooltip(
+                `<div>
+                     🍣 sushi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1e8d4bda254cfdd143f8b70a5e86c251.setIcon(div_icon_e7ea2dfa22b79e683cfb9078149a6e9e);
+            
+    
+            var marker_1868b5336250240963af6d883311ff64 = L.marker(
+                [22.305597, 114.18772],
+                {
+  "title": "\ud83e\udd50",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_db67228528f74898653cc705aa872cfc = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83e\udd50\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_914adca1e550f3bd2dc06509bbac44a0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_792cba7144be8525b4d15ab5e4f049fa = $(`<div id="html_792cba7144be8525b4d15ab5e4f049fa" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> pastry<br><b>Type:</b> food<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_914adca1e550f3bd2dc06509bbac44a0.setContent(html_792cba7144be8525b4d15ab5e4f049fa);
+            
+        
+
+        marker_1868b5336250240963af6d883311ff64.bindPopup(popup_914adca1e550f3bd2dc06509bbac44a0)
+        ;
+
+        
+    
+    
+            marker_1868b5336250240963af6d883311ff64.bindTooltip(
+                `<div>
+                     🥐 pastry
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1868b5336250240963af6d883311ff64.setIcon(div_icon_db67228528f74898653cc705aa872cfc);
+            
+    
+            var marker_8cf66fec33e8e8bef18a314368c30af5 = L.marker(
+                [22.306132, 114.186907],
+                {
+  "title": "\u26e9\ufe0f",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_b080fdd7567b9e5277827d5503421170 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\u26e9\ufe0f\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_9a9206a2daecc3648ba112faad4f96ca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9054ed5071f5e446a9c061864e81186b = $(`<div id="html_9054ed5071f5e446a9c061864e81186b" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> incense<br><b>Type:</b> natural<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_9a9206a2daecc3648ba112faad4f96ca.setContent(html_9054ed5071f5e446a9c061864e81186b);
+            
+        
+
+        marker_8cf66fec33e8e8bef18a314368c30af5.bindPopup(popup_9a9206a2daecc3648ba112faad4f96ca)
+        ;
+
+        
+    
+    
+            marker_8cf66fec33e8e8bef18a314368c30af5.bindTooltip(
+                `<div>
+                     ⛩️ incense
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8cf66fec33e8e8bef18a314368c30af5.setIcon(div_icon_b080fdd7567b9e5277827d5503421170);
+            
+    
+            var marker_8a26e16c980f2d4fd839a0b82167fbe8 = L.marker(
+                [22.306132, 114.186807],
+                {
+  "title": "\ud83c\udf30",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_80f9e9e5586bb3de0f25ab5735f53427 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83c\udf30\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_2324b923ede36da13839ed3882c14aee = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_609845ea0214a21c60b69d2f1ed04d8c = $(`<div id="html_609845ea0214a21c60b69d2f1ed04d8c" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> chestnuts<br><b>Type:</b> food<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_2324b923ede36da13839ed3882c14aee.setContent(html_609845ea0214a21c60b69d2f1ed04d8c);
+            
+        
+
+        marker_8a26e16c980f2d4fd839a0b82167fbe8.bindPopup(popup_2324b923ede36da13839ed3882c14aee)
+        ;
+
+        
+    
+    
+            marker_8a26e16c980f2d4fd839a0b82167fbe8.bindTooltip(
+                `<div>
+                     🌰 chestnuts
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8a26e16c980f2d4fd839a0b82167fbe8.setIcon(div_icon_80f9e9e5586bb3de0f25ab5735f53427);
+            
+    
+            var marker_ab275ce09a0697b6587e2ae3bc891ffe = L.marker(
+                [22.306132, 114.18700700000001],
+                {
+  "title": "\ud83e\udd54",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_0f1dd19f458c3c7aba9b5401e1dd4bea = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83e\udd54\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_4da160a559bc4f42b29771045c69787c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_173eb4d479ec1aae59fc214da1d921eb = $(`<div id="html_173eb4d479ec1aae59fc214da1d921eb" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> potatoes<br><b>Type:</b> food<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_4da160a559bc4f42b29771045c69787c.setContent(html_173eb4d479ec1aae59fc214da1d921eb);
+            
+        
+
+        marker_ab275ce09a0697b6587e2ae3bc891ffe.bindPopup(popup_4da160a559bc4f42b29771045c69787c)
+        ;
+
+        
+    
+    
+            marker_ab275ce09a0697b6587e2ae3bc891ffe.bindTooltip(
+                `<div>
+                     🥔 potatoes
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ab275ce09a0697b6587e2ae3bc891ffe.setIcon(div_icon_0f1dd19f458c3c7aba9b5401e1dd4bea);
+            
+    
+            var marker_2b631401b980eb56c2c3dd93991953a4 = L.marker(
+                [22.306132, 114.186907],
+                {
+  "title": "\ud83e\udd86",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_42c8babeee54a1b8988b68c16058de24 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83e\udd86\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_db17bbde6fa543595c1375af8b107455 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ee24736c93731779c8c0195d27917144 = $(`<div id="html_ee24736c93731779c8c0195d27917144" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> roasted goose<br><b>Type:</b> food<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_db17bbde6fa543595c1375af8b107455.setContent(html_ee24736c93731779c8c0195d27917144);
+            
+        
+
+        marker_2b631401b980eb56c2c3dd93991953a4.bindPopup(popup_db17bbde6fa543595c1375af8b107455)
+        ;
+
+        
+    
+    
+            marker_2b631401b980eb56c2c3dd93991953a4.bindTooltip(
+                `<div>
+                     🦆 roasted goose
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2b631401b980eb56c2c3dd93991953a4.setIcon(div_icon_42c8babeee54a1b8988b68c16058de24);
+            
+    
+            var marker_4a2a2d33d85c468425a7bb48c60f9cee = L.marker(
+                [22.306132, 114.186907],
+                {
+  "title": "\ud83e\udd86",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_a3e52ea9a6cc657269e35671a01fe6d9 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83e\udd86\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_77f81848cebf7aa30389481e5f27715d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8e2ccd0ac79e19ee3f4f7be1e9806037 = $(`<div id="html_8e2ccd0ac79e19ee3f4f7be1e9806037" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> roasted duck<br><b>Type:</b> food<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_77f81848cebf7aa30389481e5f27715d.setContent(html_8e2ccd0ac79e19ee3f4f7be1e9806037);
+            
+        
+
+        marker_4a2a2d33d85c468425a7bb48c60f9cee.bindPopup(popup_77f81848cebf7aa30389481e5f27715d)
+        ;
+
+        
+    
+    
+            marker_4a2a2d33d85c468425a7bb48c60f9cee.bindTooltip(
+                `<div>
+                     🦆 roasted duck
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4a2a2d33d85c468425a7bb48c60f9cee.setIcon(div_icon_a3e52ea9a6cc657269e35671a01fe6d9);
+            
+    
+            var marker_78264730b5c4a607afab75a3ab6fc096 = L.marker(
+                [22.306132, 114.186907],
+                {
+  "title": "\ud83c\udf5c",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_804ae9f70ab0c49c1a17a2281eb4a9f3 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83c\udf5c\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_b5d75a7e69b3b4fe2c08b69769527ff9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8608cf310bf6527b39f76206cfa6b668 = $(`<div id="html_8608cf310bf6527b39f76206cfa6b668" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> meat based food<br><b>Type:</b> food<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_b5d75a7e69b3b4fe2c08b69769527ff9.setContent(html_8608cf310bf6527b39f76206cfa6b668);
+            
+        
+
+        marker_78264730b5c4a607afab75a3ab6fc096.bindPopup(popup_b5d75a7e69b3b4fe2c08b69769527ff9)
+        ;
+
+        
+    
+    
+            marker_78264730b5c4a607afab75a3ab6fc096.bindTooltip(
+                `<div>
+                     🍜 meat based food
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_78264730b5c4a607afab75a3ab6fc096.setIcon(div_icon_804ae9f70ab0c49c1a17a2281eb4a9f3);
+            
+    
+            var marker_7cce616bf16de687736ecd9b524cb125 = L.marker(
+                [22.306132, 114.186907],
+                {
+  "title": "\ud83e\udd55",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_a672936fba31f60420975b6f30644bd4 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83e\udd55\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_68881041ae09ca983d34641a066d959d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f0c3788fa55ef5b78a05a7dde01177cb = $(`<div id="html_f0c3788fa55ef5b78a05a7dde01177cb" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> fresh veggies<br><b>Type:</b> food<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_68881041ae09ca983d34641a066d959d.setContent(html_f0c3788fa55ef5b78a05a7dde01177cb);
+            
+        
+
+        marker_7cce616bf16de687736ecd9b524cb125.bindPopup(popup_68881041ae09ca983d34641a066d959d)
+        ;
+
+        
+    
+    
+            marker_7cce616bf16de687736ecd9b524cb125.bindTooltip(
+                `<div>
+                     🥕 fresh veggies
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7cce616bf16de687736ecd9b524cb125.setIcon(div_icon_a672936fba31f60420975b6f30644bd4);
+            
+    
+            var marker_94cd6d776a17ab4b9212cc15a5a5e6f2 = L.marker(
+                [22.306979, 114.185622],
+                {
+  "title": "\ud83c\udf75",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_39fe04186fc6505da77c0fd2ab70c707 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83c\udf75\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_fd1efb140eb9492d5390641b3ea34275 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ec87d5fbc04daf0956b221dcaa5243ca = $(`<div id="html_ec87d5fbc04daf0956b221dcaa5243ca" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> tea<br><b>Type:</b> food<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_fd1efb140eb9492d5390641b3ea34275.setContent(html_ec87d5fbc04daf0956b221dcaa5243ca);
+            
+        
+
+        marker_94cd6d776a17ab4b9212cc15a5a5e6f2.bindPopup(popup_fd1efb140eb9492d5390641b3ea34275)
+        ;
+
+        
+    
+    
+            marker_94cd6d776a17ab4b9212cc15a5a5e6f2.bindTooltip(
+                `<div>
+                     🍵 tea
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_94cd6d776a17ab4b9212cc15a5a5e6f2.setIcon(div_icon_39fe04186fc6505da77c0fd2ab70c707);
+            
+    
+            var marker_547fca11a2b9a1c4038c43ceb27c5d79 = L.marker(
+                [22.307532, 114.185657],
+                {
+  "title": "\ud83d\ude97",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_6190fb80f6ef664123cf8331efe1ccef = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83d\ude97\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_2fc91170ce6f5d2a8f9fd9e58a82c439 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e168af3b2b1bb837c57612cb8a01f602 = $(`<div id="html_e168af3b2b1bb837c57612cb8a01f602" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> cars<br><b>Type:</b> chemical<br><b>Attitude:</b> negative</div>`)[0];
+                popup_2fc91170ce6f5d2a8f9fd9e58a82c439.setContent(html_e168af3b2b1bb837c57612cb8a01f602);
+            
+        
+
+        marker_547fca11a2b9a1c4038c43ceb27c5d79.bindPopup(popup_2fc91170ce6f5d2a8f9fd9e58a82c439)
+        ;
+
+        
+    
+    
+            marker_547fca11a2b9a1c4038c43ceb27c5d79.bindTooltip(
+                `<div>
+                     🚗 cars
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_547fca11a2b9a1c4038c43ceb27c5d79.setIcon(div_icon_6190fb80f6ef664123cf8331efe1ccef);
+            
+    
+            var marker_9ce3e02dc6423038acea9ff5c8561381 = L.marker(
+                [22.307515, 114.185481],
+                {
+  "title": "\ud83c\udf5c",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_bd5ee6b06ce687e46bcd107d4adf19cf = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83c\udf5c\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_a75f90c2b4a24ac302c3a05d69da86e4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_03904bab4e6a57cae1e5c997ef8a7a7c = $(`<div id="html_03904bab4e6a57cae1e5c997ef8a7a7c" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> meat based food<br><b>Type:</b> food<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_a75f90c2b4a24ac302c3a05d69da86e4.setContent(html_03904bab4e6a57cae1e5c997ef8a7a7c);
+            
+        
+
+        marker_9ce3e02dc6423038acea9ff5c8561381.bindPopup(popup_a75f90c2b4a24ac302c3a05d69da86e4)
+        ;
+
+        
+    
+    
+            marker_9ce3e02dc6423038acea9ff5c8561381.bindTooltip(
+                `<div>
+                     🍜 meat based food
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9ce3e02dc6423038acea9ff5c8561381.setIcon(div_icon_bd5ee6b06ce687e46bcd107d4adf19cf);
+            
+    
+            var marker_a6b109e45ae0d57d378482523561f607 = L.marker(
+                [22.306617, 114.18468],
+                {
+  "title": "\ud83d\udca8",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_2148f7231a84fe9bb48edec8c4e78c4f = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83d\udca8\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_90481e2d557eb07d4ed11676a73a2409 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9644ba1183c1c91c4c793a69d646dc74 = $(`<div id="html_9644ba1183c1c91c4c793a69d646dc74" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> construction dust<br><b>Type:</b> chemical<br><b>Attitude:</b> negative</div>`)[0];
+                popup_90481e2d557eb07d4ed11676a73a2409.setContent(html_9644ba1183c1c91c4c793a69d646dc74);
+            
+        
+
+        marker_a6b109e45ae0d57d378482523561f607.bindPopup(popup_90481e2d557eb07d4ed11676a73a2409)
+        ;
+
+        
+    
+    
+            marker_a6b109e45ae0d57d378482523561f607.bindTooltip(
+                `<div>
+                     💨 construction dust
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a6b109e45ae0d57d378482523561f607.setIcon(div_icon_2148f7231a84fe9bb48edec8c4e78c4f);
+            
+    
+            var marker_0079d239c84b0576863e769fe806e9c0 = L.marker(
+                [22.306369, 114.184747],
+                {
+  "title": "\ud83e\udd86",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_3fd5380d438a02cc364d75f9cd925bfc = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83e\udd86\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_a8c86c89e5640bd5cee507bc869e1a77 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_27938b3c981d071db02b0d4b25ef5ee1 = $(`<div id="html_27938b3c981d071db02b0d4b25ef5ee1" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> roasted goose<br><b>Type:</b> food<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_a8c86c89e5640bd5cee507bc869e1a77.setContent(html_27938b3c981d071db02b0d4b25ef5ee1);
+            
+        
+
+        marker_0079d239c84b0576863e769fe806e9c0.bindPopup(popup_a8c86c89e5640bd5cee507bc869e1a77)
+        ;
+
+        
+    
+    
+            marker_0079d239c84b0576863e769fe806e9c0.bindTooltip(
+                `<div>
+                     🦆 roasted goose
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0079d239c84b0576863e769fe806e9c0.setIcon(div_icon_3fd5380d438a02cc364d75f9cd925bfc);
+            
+    
+            var marker_f744e7423975cb2c25258edef5e095b8 = L.marker(
+                [22.305497, 114.184908],
+                {
+  "title": "\ud83c\udf3f",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_986f711e9795b5cc65baa76b2c83f71a = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83c\udf3f\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_9ff4774a1fa5f4adc62d0e44b558e611 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b8e9a2ac117f93b3652516dbcebf0bff = $(`<div id="html_b8e9a2ac117f93b3652516dbcebf0bff" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> greenery<br><b>Type:</b> natural<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_9ff4774a1fa5f4adc62d0e44b558e611.setContent(html_b8e9a2ac117f93b3652516dbcebf0bff);
+            
+        
+
+        marker_f744e7423975cb2c25258edef5e095b8.bindPopup(popup_9ff4774a1fa5f4adc62d0e44b558e611)
+        ;
+
+        
+    
+    
+            marker_f744e7423975cb2c25258edef5e095b8.bindTooltip(
+                `<div>
+                     🌿 greenery
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f744e7423975cb2c25258edef5e095b8.setIcon(div_icon_986f711e9795b5cc65baa76b2c83f71a);
+            
+    
+            var marker_0bd20ff04848066e8ddb36d385b762f5 = L.marker(
+                [22.305461, 114.185199],
+                {
+  "title": "\ud83c\udf5c",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_d3d42ddf1c18c75f5400dcdbcfd94fa2 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83c\udf5c\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_bdbca38cfccd5908f1dc0bcd9a250ab8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8cc94e77f5efd1839ba52159a33b20a9 = $(`<div id="html_8cc94e77f5efd1839ba52159a33b20a9" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> meat based food<br><b>Type:</b> food<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_bdbca38cfccd5908f1dc0bcd9a250ab8.setContent(html_8cc94e77f5efd1839ba52159a33b20a9);
+            
+        
+
+        marker_0bd20ff04848066e8ddb36d385b762f5.bindPopup(popup_bdbca38cfccd5908f1dc0bcd9a250ab8)
+        ;
+
+        
+    
+    
+            marker_0bd20ff04848066e8ddb36d385b762f5.bindTooltip(
+                `<div>
+                     🍜 meat based food
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0bd20ff04848066e8ddb36d385b762f5.setIcon(div_icon_d3d42ddf1c18c75f5400dcdbcfd94fa2);
+            
+    
+            var marker_5f4b1daf954fe75a1eede73411caeaa9 = L.marker(
+                [22.304995, 114.186082],
+                {
+  "title": "\ud83c\udf5c",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_e229c6e8e99d3cb87f2c64c72841cf62 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83c\udf5c\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_9ac4ba70fca7edb2c31ee51098fa6a6a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f66b2b086750128a0a13da6029301c3e = $(`<div id="html_f66b2b086750128a0a13da6029301c3e" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> meat based food<br><b>Type:</b> food<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_9ac4ba70fca7edb2c31ee51098fa6a6a.setContent(html_f66b2b086750128a0a13da6029301c3e);
+            
+        
+
+        marker_5f4b1daf954fe75a1eede73411caeaa9.bindPopup(popup_9ac4ba70fca7edb2c31ee51098fa6a6a)
+        ;
+
+        
+    
+    
+            marker_5f4b1daf954fe75a1eede73411caeaa9.bindTooltip(
+                `<div>
+                     🍜 meat based food
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5f4b1daf954fe75a1eede73411caeaa9.setIcon(div_icon_e229c6e8e99d3cb87f2c64c72841cf62);
+            
+    
+            var marker_022e4ba9d6901891772ef0f3ceb5e6ad = L.marker(
+                [22.30436, 114.18657999999999],
+                {
+  "title": "\ud83c\udf3f",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_cc7b126767bed5eca7a1957d1d5d8ecf = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83c\udf3f\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_dd497eb04194d62553216f72542b8ff4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e49b662382c8ae675c7454e45d297893 = $(`<div id="html_e49b662382c8ae675c7454e45d297893" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> greenery<br><b>Type:</b> natural<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_dd497eb04194d62553216f72542b8ff4.setContent(html_e49b662382c8ae675c7454e45d297893);
+            
+        
+
+        marker_022e4ba9d6901891772ef0f3ceb5e6ad.bindPopup(popup_dd497eb04194d62553216f72542b8ff4)
+        ;
+
+        
+    
+    
+            marker_022e4ba9d6901891772ef0f3ceb5e6ad.bindTooltip(
+                `<div>
+                     🌿 greenery
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_022e4ba9d6901891772ef0f3ceb5e6ad.setIcon(div_icon_cc7b126767bed5eca7a1957d1d5d8ecf);
+            
+    
+            var marker_455129e427a5b640dbceff179bbe16ed = L.marker(
+                [22.30436, 114.18678],
+                {
+  "title": "\ud83c\udf5c",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_7c3608aa1f797ce08637f886b60ae74c = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83c\udf5c\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_868b390b9586e4b8747ed4f5fd832967 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_19e39e60ee928b026c211388c760d72a = $(`<div id="html_19e39e60ee928b026c211388c760d72a" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> meat based food<br><b>Type:</b> food<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_868b390b9586e4b8747ed4f5fd832967.setContent(html_19e39e60ee928b026c211388c760d72a);
+            
+        
+
+        marker_455129e427a5b640dbceff179bbe16ed.bindPopup(popup_868b390b9586e4b8747ed4f5fd832967)
+        ;
+
+        
+    
+    
+            marker_455129e427a5b640dbceff179bbe16ed.bindTooltip(
+                `<div>
+                     🍜 meat based food
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_455129e427a5b640dbceff179bbe16ed.setIcon(div_icon_7c3608aa1f797ce08637f886b60ae74c);
+            
+    
+            var marker_4d91200fe7e8661750d3e401ecc6e4e1 = L.marker(
+                [22.303949, 114.187387],
+                {
+  "title": "\ud83c\udf2c\ufe0f",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_9bc5b0b8a9cec054a6c8a177f71cd7de = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83c\udf2c\ufe0f\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_115d50c421d260aa04b78cd972f245b6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ddb006bc5e5884443e67c6f4bfc72a5c = $(`<div id="html_ddb006bc5e5884443e67c6f4bfc72a5c" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> breeze<br><b>Type:</b> natural<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_115d50c421d260aa04b78cd972f245b6.setContent(html_ddb006bc5e5884443e67c6f4bfc72a5c);
+            
+        
+
+        marker_4d91200fe7e8661750d3e401ecc6e4e1.bindPopup(popup_115d50c421d260aa04b78cd972f245b6)
+        ;
+
+        
+    
+    
+            marker_4d91200fe7e8661750d3e401ecc6e4e1.bindTooltip(
+                `<div>
+                     🌬️ breeze
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4d91200fe7e8661750d3e401ecc6e4e1.setIcon(div_icon_9bc5b0b8a9cec054a6c8a177f71cd7de);
+            
+    
+            var marker_50c0514619b59f8372ab3664e29b3d67 = L.marker(
+                [22.304805, 114.187209],
+                {
+  "title": "\ud83c\udf3f",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_d3b6ecb82ad8bb650006e6f0e2cbc765 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83c\udf3f\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_88fc7459ed1f448d3ee94b77205b44bf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a96b2c516c7451d5623967fad2e5dab8 = $(`<div id="html_a96b2c516c7451d5623967fad2e5dab8" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> greenery<br><b>Type:</b> natural<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_88fc7459ed1f448d3ee94b77205b44bf.setContent(html_a96b2c516c7451d5623967fad2e5dab8);
+            
+        
+
+        marker_50c0514619b59f8372ab3664e29b3d67.bindPopup(popup_88fc7459ed1f448d3ee94b77205b44bf)
+        ;
+
+        
+    
+    
+            marker_50c0514619b59f8372ab3664e29b3d67.bindTooltip(
+                `<div>
+                     🌿 greenery
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_50c0514619b59f8372ab3664e29b3d67.setIcon(div_icon_d3b6ecb82ad8bb650006e6f0e2cbc765);
+            
+    
+            var marker_c9bc4530cd89a0f4475f7715a54b2a37 = L.marker(
+                [22.305426, 114.187197],
+                {
+  "title": "\ud83e\udd50",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_9d0d7b1eb2e1076b3fb6a46d43f109c9 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83e\udd50\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_376e4af561610415be1cbe1e607d753e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c621218044bb9c9af27f9173a6e83c0d = $(`<div id="html_c621218044bb9c9af27f9173a6e83c0d" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> pastry<br><b>Type:</b> food<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_376e4af561610415be1cbe1e607d753e.setContent(html_c621218044bb9c9af27f9173a6e83c0d);
+            
+        
+
+        marker_c9bc4530cd89a0f4475f7715a54b2a37.bindPopup(popup_376e4af561610415be1cbe1e607d753e)
+        ;
+
+        
+    
+    
+            marker_c9bc4530cd89a0f4475f7715a54b2a37.bindTooltip(
+                `<div>
+                     🥐 pastry
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c9bc4530cd89a0f4475f7715a54b2a37.setIcon(div_icon_9d0d7b1eb2e1076b3fb6a46d43f109c9);
+            
+    
+            var marker_6edee0bbb15f44e084e744a6d9190f3a = L.marker(
+                [22.30575, 114.186592],
+                {
+  "title": "\ud83e\udd6c",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_2ad1593397a911a800c9c3d80b3b8dbc = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83e\udd6c\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_328544fea3b27744299f201844a09cba = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_476eca5df193d01cdc32fd570ce16703 = $(`<div id="html_476eca5df193d01cdc32fd570ce16703" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> veggies<br><b>Type:</b> food<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_328544fea3b27744299f201844a09cba.setContent(html_476eca5df193d01cdc32fd570ce16703);
+            
+        
+
+        marker_6edee0bbb15f44e084e744a6d9190f3a.bindPopup(popup_328544fea3b27744299f201844a09cba)
+        ;
+
+        
+    
+    
+            marker_6edee0bbb15f44e084e744a6d9190f3a.bindTooltip(
+                `<div>
+                     🥬 veggies
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6edee0bbb15f44e084e744a6d9190f3a.setIcon(div_icon_2ad1593397a911a800c9c3d80b3b8dbc);
+            
+    
+            var marker_909e53c00c12576fb7dd5cb4e2363100 = L.marker(
+                [22.305841, 114.186665],
+                {
+  "title": "\ud83e\uddea",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_909520505c658f96b63626645a783882 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83e\uddea\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_01353fc39a7ddc227b4232c76ccffaaa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b06f14904b1f0f7ada192889388a3ab2 = $(`<div id="html_b06f14904b1f0f7ada192889388a3ab2" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> chemicals<br><b>Type:</b> chemical<br><b>Attitude:</b> negative</div>`)[0];
+                popup_01353fc39a7ddc227b4232c76ccffaaa.setContent(html_b06f14904b1f0f7ada192889388a3ab2);
+            
+        
+
+        marker_909e53c00c12576fb7dd5cb4e2363100.bindPopup(popup_01353fc39a7ddc227b4232c76ccffaaa)
+        ;
+
+        
+    
+    
+            marker_909e53c00c12576fb7dd5cb4e2363100.bindTooltip(
+                `<div>
+                     🧪 chemicals
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_909e53c00c12576fb7dd5cb4e2363100.setIcon(div_icon_909520505c658f96b63626645a783882);
+            
+    
+            var marker_e3550fad716049a02bb330934db328d6 = L.marker(
+                [22.306364, 114.18549],
+                {
+  "title": "\ud83e\udd86",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_d360ea502e1bc60da26b9fb74e1b31a1 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83e\udd86\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_657f58120ccb6c6265d16d9a63911a5b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_70387f602344f3ec19c4ca3e46f02327 = $(`<div id="html_70387f602344f3ec19c4ca3e46f02327" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> roasted duck<br><b>Type:</b> food<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_657f58120ccb6c6265d16d9a63911a5b.setContent(html_70387f602344f3ec19c4ca3e46f02327);
+            
+        
+
+        marker_e3550fad716049a02bb330934db328d6.bindPopup(popup_657f58120ccb6c6265d16d9a63911a5b)
+        ;
+
+        
+    
+    
+            marker_e3550fad716049a02bb330934db328d6.bindTooltip(
+                `<div>
+                     🦆 roasted duck
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e3550fad716049a02bb330934db328d6.setIcon(div_icon_d360ea502e1bc60da26b9fb74e1b31a1);
+            
+    
+            var marker_65d04687e5e7b6f91193fa68124cd6b9 = L.marker(
+                [22.306565, 114.185786],
+                {
+  "title": "\ud83c\udf5c",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_4e2632cc14b0c005c3ff99dd1cae0dd3 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83c\udf5c\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_80e8030223fca2489c0bd537bc344b60 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c8c33fbfedb4becbb2aa13366b80c708 = $(`<div id="html_c8c33fbfedb4becbb2aa13366b80c708" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> food chinese<br><b>Type:</b> food<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_80e8030223fca2489c0bd537bc344b60.setContent(html_c8c33fbfedb4becbb2aa13366b80c708);
+            
+        
+
+        marker_65d04687e5e7b6f91193fa68124cd6b9.bindPopup(popup_80e8030223fca2489c0bd537bc344b60)
+        ;
+
+        
+    
+    
+            marker_65d04687e5e7b6f91193fa68124cd6b9.bindTooltip(
+                `<div>
+                     🍜 food chinese
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_65d04687e5e7b6f91193fa68124cd6b9.setIcon(div_icon_4e2632cc14b0c005c3ff99dd1cae0dd3);
+            
+    
+            var marker_cdeb6972309036633d167d0a3e497262 = L.marker(
+                [22.30664, 114.185872],
+                {
+  "title": "\ud83d\udc90",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_ba8f6c3a4cd44d116d593128d08180b8 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83d\udc90\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_1dad1c17d9b9958fd1b14c525101a41c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9ad5555bf5495fdbe5f73bd9510c0623 = $(`<div id="html_9ad5555bf5495fdbe5f73bd9510c0623" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> flowers<br><b>Type:</b> natural<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_1dad1c17d9b9958fd1b14c525101a41c.setContent(html_9ad5555bf5495fdbe5f73bd9510c0623);
+            
+        
+
+        marker_cdeb6972309036633d167d0a3e497262.bindPopup(popup_1dad1c17d9b9958fd1b14c525101a41c)
+        ;
+
+        
+    
+    
+            marker_cdeb6972309036633d167d0a3e497262.bindTooltip(
+                `<div>
+                     💐 flowers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cdeb6972309036633d167d0a3e497262.setIcon(div_icon_ba8f6c3a4cd44d116d593128d08180b8);
+            
+    
+            var marker_b50106739dc9102fdfd088a35a3955b1 = L.marker(
+                [22.307152, 114.186138],
+                {
+  "title": "\ud83c\udf2c\ufe0f",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_4a499ccb9b1548f3234cea61114f637b = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83c\udf2c\ufe0f\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_fb3f332cdc8f328545176bed409c0283 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f0e3025feb7edbbc8245a0e6aaa5cec6 = $(`<div id="html_f0e3025feb7edbbc8245a0e6aaa5cec6" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> breeze<br><b>Type:</b> natural<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_fb3f332cdc8f328545176bed409c0283.setContent(html_f0e3025feb7edbbc8245a0e6aaa5cec6);
+            
+        
+
+        marker_b50106739dc9102fdfd088a35a3955b1.bindPopup(popup_fb3f332cdc8f328545176bed409c0283)
+        ;
+
+        
+    
+    
+            marker_b50106739dc9102fdfd088a35a3955b1.bindTooltip(
+                `<div>
+                     🌬️ breeze
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b50106739dc9102fdfd088a35a3955b1.setIcon(div_icon_4a499ccb9b1548f3234cea61114f637b);
+            
+    
+            var marker_369173486f55ddc17e71b844822cd7d9 = L.marker(
+                [22.306678, 114.18611],
+                {
+  "title": "\ud83e\udd50",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_8566dd295d4ec6af8cccbfd0869ee544 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83e\udd50\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_71f4a338fd6a8fd5463075b901d9086c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cba30ba82937fe02566052d449e4abb2 = $(`<div id="html_cba30ba82937fe02566052d449e4abb2" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> pastry<br><b>Type:</b> food<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_71f4a338fd6a8fd5463075b901d9086c.setContent(html_cba30ba82937fe02566052d449e4abb2);
+            
+        
+
+        marker_369173486f55ddc17e71b844822cd7d9.bindPopup(popup_71f4a338fd6a8fd5463075b901d9086c)
+        ;
+
+        
+    
+    
+            marker_369173486f55ddc17e71b844822cd7d9.bindTooltip(
+                `<div>
+                     🥐 pastry
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_369173486f55ddc17e71b844822cd7d9.setIcon(div_icon_8566dd295d4ec6af8cccbfd0869ee544);
+            
+    
+            var marker_f8cdc7593e41f2e3991b93bde580c7eb = L.marker(
+                [22.306697, 114.186357],
+                {
+  "title": "\ud83e\udd86",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_5e2ea3cb16727b5de693104448614ffc = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83e\udd86\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_8d08d0bb985445005752e2cb18849e3e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8aa08845553d14777776aa7bb5f284b9 = $(`<div id="html_8aa08845553d14777776aa7bb5f284b9" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> roasted duck<br><b>Type:</b> food<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_8d08d0bb985445005752e2cb18849e3e.setContent(html_8aa08845553d14777776aa7bb5f284b9);
+            
+        
+
+        marker_f8cdc7593e41f2e3991b93bde580c7eb.bindPopup(popup_8d08d0bb985445005752e2cb18849e3e)
+        ;
+
+        
+    
+    
+            marker_f8cdc7593e41f2e3991b93bde580c7eb.bindTooltip(
+                `<div>
+                     🦆 roasted duck
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f8cdc7593e41f2e3991b93bde580c7eb.setIcon(div_icon_5e2ea3cb16727b5de693104448614ffc);
+            
+    
+            var marker_60428e7fa7260adae503f729be13883e = L.marker(
+                [22.306649, 114.186924],
+                {
+  "title": "\ud83d\udc1f",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_25dc2db17a74ccc4fa1be8efa88778a3 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83d\udc1f\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_37a369628c075227e7d436b04974034d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f4f80552ae8e0626b90272d05bdc6acf = $(`<div id="html_f4f80552ae8e0626b90272d05bdc6acf" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> seafood<br><b>Type:</b> food<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_37a369628c075227e7d436b04974034d.setContent(html_f4f80552ae8e0626b90272d05bdc6acf);
+            
+        
+
+        marker_60428e7fa7260adae503f729be13883e.bindPopup(popup_37a369628c075227e7d436b04974034d)
+        ;
+
+        
+    
+    
+            marker_60428e7fa7260adae503f729be13883e.bindTooltip(
+                `<div>
+                     🐟 seafood
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_60428e7fa7260adae503f729be13883e.setIcon(div_icon_25dc2db17a74ccc4fa1be8efa88778a3);
+            
+    
+            var marker_3dd9b48cf665014f441fc87375e2667e = L.marker(
+                [22.307011, 114.186835],
+                {
+  "title": "\ud83c\udf4e",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_7d750edcfbb86b3c4b18140a8ac31362 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83c\udf4e\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_e657ea400f927ab4d61ab03ddb850ba5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_647eda54dd23c3ff80b53b5eced284b9 = $(`<div id="html_647eda54dd23c3ff80b53b5eced284b9" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> fruits<br><b>Type:</b> food<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_e657ea400f927ab4d61ab03ddb850ba5.setContent(html_647eda54dd23c3ff80b53b5eced284b9);
+            
+        
+
+        marker_3dd9b48cf665014f441fc87375e2667e.bindPopup(popup_e657ea400f927ab4d61ab03ddb850ba5)
+        ;
+
+        
+    
+    
+            marker_3dd9b48cf665014f441fc87375e2667e.bindTooltip(
+                `<div>
+                     🍎 fruits
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3dd9b48cf665014f441fc87375e2667e.setIcon(div_icon_7d750edcfbb86b3c4b18140a8ac31362);
+            
+    
+            var marker_9ad06c191a11388e08f6fbd871b1f710 = L.marker(
+                [22.307589, 114.187244],
+                {
+  "title": "\ud83d\udc1f",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_2a9161052c2864d336d9ca0ab4a4f54a = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83d\udc1f\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_46e9891b5626b8e7cc8620d78d0d324b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_06a5af446529828c10f5c0a916e4eb46 = $(`<div id="html_06a5af446529828c10f5c0a916e4eb46" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> seafood<br><b>Type:</b> food<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_46e9891b5626b8e7cc8620d78d0d324b.setContent(html_06a5af446529828c10f5c0a916e4eb46);
+            
+        
+
+        marker_9ad06c191a11388e08f6fbd871b1f710.bindPopup(popup_46e9891b5626b8e7cc8620d78d0d324b)
+        ;
+
+        
+    
+    
+            marker_9ad06c191a11388e08f6fbd871b1f710.bindTooltip(
+                `<div>
+                     🐟 seafood
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9ad06c191a11388e08f6fbd871b1f710.setIcon(div_icon_2a9161052c2864d336d9ca0ab4a4f54a);
+            
+    
+            var marker_fb8ded1d11a04216efafe295fe46a0b8 = L.marker(
+                [22.307966, 114.187531],
+                {
+  "title": "\ud83d\ude97",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_ef8b186779d45563f7cd360aecd67619 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83d\ude97\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_85ad65fe6a34df8800c7c8e1814e845e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a4845aa7bcd26532f745df00f257adf6 = $(`<div id="html_a4845aa7bcd26532f745df00f257adf6" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> cars<br><b>Type:</b> chemical<br><b>Attitude:</b> negative</div>`)[0];
+                popup_85ad65fe6a34df8800c7c8e1814e845e.setContent(html_a4845aa7bcd26532f745df00f257adf6);
+            
+        
+
+        marker_fb8ded1d11a04216efafe295fe46a0b8.bindPopup(popup_85ad65fe6a34df8800c7c8e1814e845e)
+        ;
+
+        
+    
+    
+            marker_fb8ded1d11a04216efafe295fe46a0b8.bindTooltip(
+                `<div>
+                     🚗 cars
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fb8ded1d11a04216efafe295fe46a0b8.setIcon(div_icon_ef8b186779d45563f7cd360aecd67619);
+            
+    
+            var marker_e72ebb0fbc8f0415ed66f78add8722b9 = L.marker(
+                [22.307858, 114.188464],
+                {
+  "title": "\u26fd",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_1eca575c80f2d39e2a5f69a6a43cbe05 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\u26fd\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_a14a102d17958bfe8801f1186f38fb79 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4cd8850b163349e2e4047d6c6e9445f8 = $(`<div id="html_4cd8850b163349e2e4047d6c6e9445f8" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> gas station<br><b>Type:</b> chemical<br><b>Attitude:</b> negative</div>`)[0];
+                popup_a14a102d17958bfe8801f1186f38fb79.setContent(html_4cd8850b163349e2e4047d6c6e9445f8);
+            
+        
+
+        marker_e72ebb0fbc8f0415ed66f78add8722b9.bindPopup(popup_a14a102d17958bfe8801f1186f38fb79)
+        ;
+
+        
+    
+    
+            marker_e72ebb0fbc8f0415ed66f78add8722b9.bindTooltip(
+                `<div>
+                     ⛽ gas station
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e72ebb0fbc8f0415ed66f78add8722b9.setIcon(div_icon_1eca575c80f2d39e2a5f69a6a43cbe05);
+            
+    
+            var marker_952a8e849d60185956444a506acb146e = L.marker(
+                [22.308514, 114.189126],
+                {
+  "title": "\ud83d\udee2\ufe0f",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_161914ac8722f05ce3abea23d3d4dddd = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83d\udee2\ufe0f\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_2c8df3a93dcb3855a03dd5e192fc9380 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e9a4d0b52a37228fbfc72f1967a07f30 = $(`<div id="html_e9a4d0b52a37228fbfc72f1967a07f30" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> car mechanics oil<br><b>Type:</b> chemical<br><b>Attitude:</b> negative</div>`)[0];
+                popup_2c8df3a93dcb3855a03dd5e192fc9380.setContent(html_e9a4d0b52a37228fbfc72f1967a07f30);
+            
+        
+
+        marker_952a8e849d60185956444a506acb146e.bindPopup(popup_2c8df3a93dcb3855a03dd5e192fc9380)
+        ;
+
+        
+    
+    
+            marker_952a8e849d60185956444a506acb146e.bindTooltip(
+                `<div>
+                     🛢️ car mechanics oil
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_952a8e849d60185956444a506acb146e.setIcon(div_icon_161914ac8722f05ce3abea23d3d4dddd);
+            
+    
+            var marker_e05d115495d1add8c0ea58aeb1e222ff = L.marker(
+                [22.309631, 114.189291],
+                {
+  "title": "\ud83d\ude97",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_cd08891cae7188f81f47b4abd0384df4 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83d\ude97\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_a1ef6d1b642b0db34df203ba3a14ce1f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1480dadddcb589a440a3ed10a1443145 = $(`<div id="html_1480dadddcb589a440a3ed10a1443145" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> cars<br><b>Type:</b> chemical<br><b>Attitude:</b> negative</div>`)[0];
+                popup_a1ef6d1b642b0db34df203ba3a14ce1f.setContent(html_1480dadddcb589a440a3ed10a1443145);
+            
+        
+
+        marker_e05d115495d1add8c0ea58aeb1e222ff.bindPopup(popup_a1ef6d1b642b0db34df203ba3a14ce1f)
+        ;
+
+        
+    
+    
+            marker_e05d115495d1add8c0ea58aeb1e222ff.bindTooltip(
+                `<div>
+                     🚗 cars
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e05d115495d1add8c0ea58aeb1e222ff.setIcon(div_icon_cd08891cae7188f81f47b4abd0384df4);
+            
+    
+            var marker_3bab5711d2494a38fd54e4755ea30a12 = L.marker(
+                [22.309891, 114.188421],
+                {
+  "title": "\ud83c\udfd7\ufe0f",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_56fee62321912d83a4967f70dfea9baa = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83c\udfd7\ufe0f\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_4b80ab4e0cdb468b9158ce793034ec5a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e7d983d95e1bcaade6d327120c00f9c6 = $(`<div id="html_e7d983d95e1bcaade6d327120c00f9c6" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> construction<br><b>Type:</b> chemical<br><b>Attitude:</b> negative</div>`)[0];
+                popup_4b80ab4e0cdb468b9158ce793034ec5a.setContent(html_e7d983d95e1bcaade6d327120c00f9c6);
+            
+        
+
+        marker_3bab5711d2494a38fd54e4755ea30a12.bindPopup(popup_4b80ab4e0cdb468b9158ce793034ec5a)
+        ;
+
+        
+    
+    
+            marker_3bab5711d2494a38fd54e4755ea30a12.bindTooltip(
+                `<div>
+                     🏗️ construction
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3bab5711d2494a38fd54e4755ea30a12.setIcon(div_icon_56fee62321912d83a4967f70dfea9baa);
+            
+    
+            var marker_c558b16e5a46c8118acc5fbe016f3175 = L.marker(
+                [22.309451, 114.188309],
+                {
+  "title": "\ud83e\udd69",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_bc0da50dc378e36525fc31857250db6c = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83e\udd69\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_08f0c8faf52b2388c2721e6232750600 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_13611d8feb112c2713abd2ee2e21d098 = $(`<div id="html_13611d8feb112c2713abd2ee2e21d098" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> Beef tripe<br><b>Type:</b> food<br><b>Attitude:</b> neutral</div>`)[0];
+                popup_08f0c8faf52b2388c2721e6232750600.setContent(html_13611d8feb112c2713abd2ee2e21d098);
+            
+        
+
+        marker_c558b16e5a46c8118acc5fbe016f3175.bindPopup(popup_08f0c8faf52b2388c2721e6232750600)
+        ;
+
+        
+    
+    
+            marker_c558b16e5a46c8118acc5fbe016f3175.bindTooltip(
+                `<div>
+                     🥩 Beef tripe
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c558b16e5a46c8118acc5fbe016f3175.setIcon(div_icon_bc0da50dc378e36525fc31857250db6c);
+            
+    
+            var marker_9f4b63be66fff5aa9d4b0203bb2c6cf8 = L.marker(
+                [22.30999, 114.187537],
+                {
+  "title": "\ud83d\udc1f",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_a0432e4e0df60147b124900d67225cd9 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83d\udc1f\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_19a8f38193dea612f0652caee879d7a1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_59c8f921c5bc5b97d65bf331ba9d9faa = $(`<div id="html_59c8f921c5bc5b97d65bf331ba9d9faa" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> fish skin<br><b>Type:</b> food<br><b>Attitude:</b> neutral</div>`)[0];
+                popup_19a8f38193dea612f0652caee879d7a1.setContent(html_59c8f921c5bc5b97d65bf331ba9d9faa);
+            
+        
+
+        marker_9f4b63be66fff5aa9d4b0203bb2c6cf8.bindPopup(popup_19a8f38193dea612f0652caee879d7a1)
+        ;
+
+        
+    
+    
+            marker_9f4b63be66fff5aa9d4b0203bb2c6cf8.bindTooltip(
+                `<div>
+                     🐟 fish skin
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9f4b63be66fff5aa9d4b0203bb2c6cf8.setIcon(div_icon_a0432e4e0df60147b124900d67225cd9);
+            
+    
+            var marker_17d31bc52d8f0d5b0bcb109da15da602 = L.marker(
+                [22.311035, 114.187573],
+                {
+  "title": "\ud83e\udd50",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_14ec3af0da80a02661daba8b0a42d740 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83e\udd50\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_d3f9adf6d72162c020258b7cca297d8c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3399743a5b1cadff8587bbf9ce663442 = $(`<div id="html_3399743a5b1cadff8587bbf9ce663442" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> pastry<br><b>Type:</b> food<br><b>Attitude:</b> pleasant</div>`)[0];
+                popup_d3f9adf6d72162c020258b7cca297d8c.setContent(html_3399743a5b1cadff8587bbf9ce663442);
+            
+        
+
+        marker_17d31bc52d8f0d5b0bcb109da15da602.bindPopup(popup_d3f9adf6d72162c020258b7cca297d8c)
+        ;
+
+        
+    
+    
+            marker_17d31bc52d8f0d5b0bcb109da15da602.bindTooltip(
+                `<div>
+                     🥐 pastry
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_17d31bc52d8f0d5b0bcb109da15da602.setIcon(div_icon_14ec3af0da80a02661daba8b0a42d740);
+            
+    
+            var marker_fd5a23e2fc8472f3f09d3b63844ed3f2 = L.marker(
+                [22.311035, 114.187773],
+                {
+  "title": "\ud83d\ude97",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_cd9760490aa61f8f027d962b1f85c784 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83d\ude97\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_034b69854ae5eef9658fd524381c1631 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bb2816ea1668440237417f09c05cad4f = $(`<div id="html_bb2816ea1668440237417f09c05cad4f" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> cars<br><b>Type:</b> chemical<br><b>Attitude:</b> negative</div>`)[0];
+                popup_034b69854ae5eef9658fd524381c1631.setContent(html_bb2816ea1668440237417f09c05cad4f);
+            
+        
+
+        marker_fd5a23e2fc8472f3f09d3b63844ed3f2.bindPopup(popup_034b69854ae5eef9658fd524381c1631)
+        ;
+
+        
+    
+    
+            marker_fd5a23e2fc8472f3f09d3b63844ed3f2.bindTooltip(
+                `<div>
+                     🚗 cars
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fd5a23e2fc8472f3f09d3b63844ed3f2.setIcon(div_icon_cd9760490aa61f8f027d962b1f85c784);
+            
+    
+            var marker_9d2c36878c25ae9a6f0ea387280a8c80 = L.marker(
+                [22.311786, 114.187609],
+                {
+  "title": "\ud83d\ude97",
+}
+            ).addTo(marker_cluster_7e75fea44efade19db7a73875dc5bf31);
+        
+    
+            var div_icon_515ea08fb6545a2fcfd139aeffd7106f = L.divIcon({
+  "html": "\u003cdiv style=\u0027background-color: rgba(241, 241, 241, 0.7);border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;line-height: 24px;text-align: center;\u0027\u003e\ud83d\ude97\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_75d02fc6cf366338d5771901382f6c5d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4c75194a7cac3c548470026f91ca0fa9 = $(`<div id="html_4c75194a7cac3c548470026f91ca0fa9" style="width: 100.0%; height: 100.0%;"><b>Subtype:</b> cars<br><b>Type:</b> chemical<br><b>Attitude:</b> negative</div>`)[0];
+                popup_75d02fc6cf366338d5771901382f6c5d.setContent(html_4c75194a7cac3c548470026f91ca0fa9);
+            
+        
+
+        marker_9d2c36878c25ae9a6f0ea387280a8c80.bindPopup(popup_75d02fc6cf366338d5771901382f6c5d)
+        ;
+
+        
+    
+    
+            marker_9d2c36878c25ae9a6f0ea387280a8c80.bindTooltip(
+                `<div>
+                     🚗 cars
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9d2c36878c25ae9a6f0ea387280a8c80.setIcon(div_icon_515ea08fb6545a2fcfd139aeffd7106f);
+            
+    
+            marker_cluster_7e75fea44efade19db7a73875dc5bf31.addTo(map_699cff4f7984d142a42b9de584f9f6b7);
+        
+</script>
+</html>
